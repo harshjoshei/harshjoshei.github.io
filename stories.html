@@ -3,225 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stories</title>
+    <link rel="stylesheet" href="str.css">
+    <title>Story</title>
 </head>
-<style>
-    <style>
-        body
-    {
-      background-color:aquamarine;
-      font-family: 'RobotoDraft', 'Roboto', sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-    
-    *
-    {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-    
-    h5
-    {
-      margin:0px;
-      font-size:1.4em;
-      font-weight:700;
-    }
-    
-    p
-    {
-      font-size:12px;
-    }
-    
-    .center
-    {
-      height:100vh;
-      width:100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
- 
-    
-    .property-card
-    {
-      height:18em;
-      width:14em;
-      display:-webkit-box;
-      display:-ms-flexbox;
-      display:flex;
-      -webkit-box-orient:vertical;
-      -webkit-box-direction:normal;
-      -ms-flex-direction:column;
-      flex-direction:column;
-      position:relative;
-      -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-      -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-      transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-      border-radius:16px;
-      overflow:hidden;
-      -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-      box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-    }
-    /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
-    
-    /* Top Half of card, image. */
-    
-    .property-image
-    {
-      height:6em;
-      width:14em;
-      padding:1em 2em;
-      position:Absolute;
-      top:0px;
-      -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-      -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-      transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-      background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
-      background-size:cover;
-      background-repeat:no-repeat;
-    }
-    
-    /* Bottom Card Section */
-    
-    .property-description
-    {
-      background-color: #FAFAFC;
-      height:12em;
-      width:14em;
-      position:absolute;
-      bottom:0em;
-      -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-      -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-      transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-      padding: 0.5em 1em;
-      text-align:center;
-    }
-    
-    /* Social Icons */
-    
-    .property-social-icons
-    {
-      width:1em;
-      height:1em;
-      background-color:black;
-      position:absolute;
-      bottom:1em;
-      left:1em;
-      -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-      -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-      transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    }
-    
-    /* Property Cards Hover States */
-    
-    .property-card:hover .property-description
-    {
-      height:0em;
-      padding:0px 1em;
-    }
-    .property-card:hover .property-image
-    {
-      height:18em;
-    }
-    
-    .property-card:hover .property-social-icons
-    {
-      background-color:white;
-    }
-    
-    .property-card:hover .property-social-icons:hover
-    {
-      background-color:blue;
-      cursor:pointer;
-    }
-    
-    
-    .property-image-title
-    {
-    text-align:center;
-    position:Relative;
-    top:30%;
-    opacity:0;
-    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-    color:black;
-    font-size:1.2em;
-    }
-    
-    .property-card:hover .property-image-title
-    {
-    opacity:1;
-    }
-</style>
+
 <body>
-   
-    <div style=" padding-top:2em; color: #3636d4;">
-        <h2>
-            <a href="mystories.html" style="color: #3636d4">(CLICK HERE) to create a new story</a></h2>
     
-    <div class="section-top-border">
-        <div class="row">
-            <table>
-            <tr>
-            <div>
-                <h1 class="mb-20" style="color:midnightblue">UserName</h1>
-                <a href="index.html"><button type="submit">LOGOUT </button></a>
-                <blockquote>
-                    <div class="center">
-                        <div class="property-card">
-                          <a href="#">
-                            <div class="property-image">
-                              <div class="property-image-title">
-                
-                              </div>
-                            </div></a>
-                          <div class="property-description">
-                            <h5> Story Title </h5>
-                            <p>Story Content</p>
-                          </div>
-                          </a>
-                         
-                        </div>
-                        <div class="property-card">
-                            <a href="#">
-                              <div class="property-image">
-                                <div class="property-image-title">
-                  
-                                </div>
-                              </div></a>
-                            <div class="property-description">
-                              <h5> Story Title </h5>
-                              <p>Story Content</p>
-                            </div>
-                            </a>
-                           
-                          </div>
-                          <div class="property-card">
-                            <a href="#">
-                              <div class="property-image">
-                                <div class="property-image-title">
-                  
-                                </div>
-                              </div></a>
-                            <div class="property-description">
-                              <h5> Story Title </h5>
-                              <p>Story Content</p>
-                            </div>
-                            </a>
-                           
-                          </div>
-                    <div>
-                        <a href="#" name="d"><button>Read More</button></a>
-                    </div>
-                </blockquote>
-            </div>
-            </tr>
-           
-            </table>
-        </div>
+<div class="container">
+    <a href="mystories.html"><h1>ADD Story</a> | <a href="index.html">Logout</a> </h1>
+    <div class="info">
+      <h1>Yarn book</h1><span>Designed<i class='fa fa-heart animated infinite pulse'></i> by <a href=''>harsh joshi</a></span>
     </div>
-    <div style="padding-top:1em;">
-        <a href="index.html"><button type="submit">LOGOUT </button></a>
+    <div class="column">
+      <div class="demo-title">Harsh</div>
+      <!-- Post-->
+      <div class="post-module">
+        <!-- Thumbnail-->
+        <div class="thumbnail">
+          <div class="date">
+            <div class="day">27</div>
+            <div class="month">Jul</div>
+          </div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"/>
         </div>
+        <!-- Post Content-->
+        <div class="post-content">
+          <div class="category">Photos</div>
+          <h1 class="title">My Story</h1>
+          <h2 class="sub_title">The city that never sleeps.</h2>
+          <p class="description">Dummy Content New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+          <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div>
+        </div>
+      </div>
     </div>
+    <div class="column">
+      <div class="demo-title">User</div>
+      <!-- Post-->
+      <div class="post-module hover">
+        <!-- Thumbnail-->
+        <div class="thumbnail">
+          <div class="date">
+            <div class="day">1</div>
+            <div class="month">Aug</div>
+          </div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"/>
+        </div>
+        <!-- Post Content-->
+        <div class="post-content">
+          <div class="category">Photos</div>
+          <h1 class="title">City Lights in New York</h1>
+          <h2 class="sub_title">The city that never sleeps.</h2>
+          <p class="description">New York, the largest city in the U.S.</p>
+          <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-o"></i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
