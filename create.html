@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bt.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/navbar-fixed/">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="str.css">
+    <style>
+        body {
+            min-height: 75rem;
+            padding-top: 4.5rem;
+            background-color: #e2f3ff;
+        }
+    </style>
+
+    <title>Yarn Book</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top " style="background-color: #0351b8;">
+        
+        <a class="navbar-brand" href="#">YARN BOOK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="stories.html">All stories</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Add story <i class="fa-edit"></i>  <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn-danger btn" href="index.html">Log out</a>
+                </li>
+               
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input id="filter" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    
+        <div class="info text-center">
+          <span>Designed<i class='fa fa-heart animated infinite pulse'></i> by <a href=''>harsh joshi</a></span>
+        </div>
+        <div>
+            <form id="form1" class="card text-center" style="width: 500px; height:100px; margin:50px; text-align:center;">
+                <h4 class="card-title">Title of Story</h4>
+                <input type="text" id="item" class="form-control mr-sm-2" placeholder="write your story">
+                <button type="submit" class="btn-primary btn">Create</button>
+            </form>
+        </div>
+        
+        <br>
+       
+            <ul id="items">
+                <li>story 1 <button class="btn-dark btn rounded">Delete</button></li>
+                <li>story 2 <button class="btn-dark btn rounded">Delete</button></li>
+            </ul>
+        
+        
+      
+
+
+    <script src="add.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
