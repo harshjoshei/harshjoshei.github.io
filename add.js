@@ -30,11 +30,7 @@ function addItem(e){
   var deleteBtn = document.createElement('button');
 
   // Add classes to del button
-<<<<<<< HEAD
   deleteBtn.className = 'btn-dark btn rounded';
-=======
-  deleteBtn.className = 'btn-dark';
->>>>>>> 583060af5a777c38bade5ea268ebb2b22efd0608
 
   // Append text node
   deleteBtn.appendChild(document.createTextNode('Delete'));
