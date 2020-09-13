@@ -9,7 +9,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/navbar-fixed/">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="str.css">
@@ -39,7 +43,7 @@
                     <a class="nav-link" href="stories.html">All stories</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Add story <i class="fa-edit"></i>  <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Add story  <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About Us</a>
@@ -59,24 +63,37 @@
 
     
         <div class="info text-center">
-          <span>Designed<i class='fa fa-heart animated infinite pulse'></i> by <a href=''>harsh joshi</a></span>
+          <span>Designed <i class='fa fa-heart animated infinite pulse'></i> by <a href=''>harsh joshi</a></span>
         </div>
-        <div>
-            <form id="form1" class="card text-center" style="width: 500px; height:100px; margin:50px; text-align:center;">
-                <h4 class="card-title">Title of Story</h4>
-                <input type="text" id="item" class="form-control mr-sm-2" placeholder="write your story">
-                <button type="submit" class="btn-primary btn">Create</button>
-            </form>
-        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="card card-signin my-3">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Title of Story</h4>
+                            <form id="form1" class="form-signin" style="width: 500px; height:100px;  text-align:center;">
+                                <div class="form-label-group">
+                                <input type="text" id="item" class="form-control" placeholder="write your story"/>
+                                </div>
+                                <br>
+                                    <button type="submit" class="btn btn-primary">Create</button>
+                        </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+                
+              
         
         <br>
-       
+        
             <ul id="items">
                 <li>story 1 <button class="btn-dark btn rounded">Delete</button></li>
                 <li>story 2 <button class="btn-dark btn rounded">Delete</button></li>
             </ul>
         
-        
+        </div>
       
 
 
