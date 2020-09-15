@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href='https://fonts.googleapis.com/css?family=Spirax' rel='stylesheet' type='text/css'>
+<style>
+#animate-text-example{
+    font-family:'Spirax';
+    font-weight: 700;
+    font-size:38px;
+    color: rgb(249, 249, 252);
+}
+</style>
+</head>
+<body>
+
+<div id="animate-text-example">Write and share your life story...</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script src="textbanner.js"></script>
+<script>
+	$('#animate-text-example').textbanner({
+            cycles: 3,
+            growth: 150,
+            speed: 200
+        });    
+</script>
+</body>
+</html>
+
